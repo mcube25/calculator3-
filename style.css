@@ -5,7 +5,7 @@ body, div, a {
 }
 
 #calculator {
-	background-color: #999;
+	background-color: orange;
 	width: 310px;
 	height: 460px;
 	border: 3px black solid;
@@ -48,6 +48,8 @@ body, div, a {
 #numbers a {
 	width: 50px;
 	height: 50px;
+  border-radius: 25px;
+  border: 2px black solid;
 	font-size: 32px;
 	padding: 10px;
 	margin: 5px;
@@ -57,7 +59,7 @@ body, div, a {
     height: 70px;
     width: 300px;
     margin:auto;
-    background-color:rgb(12,23,100);
+    background-color:white;
     margin-bottom: 5px;
     text-align: right;
     font-size: 60px;
@@ -72,6 +74,7 @@ body, div, a {
 #side a {
 	width: 40px;
 	height: 40px;
+  border-radius: 20px;
 	float: right;
 	font-size: 32px;
 	padding: 10px;
@@ -79,6 +82,6 @@ body, div, a {
 }
 
 a#equals {
-	padding-top: 50px;
-	height: 100px;
+	padding-top: 30px;
+	height: 60px;
 }
