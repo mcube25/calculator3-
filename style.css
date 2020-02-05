@@ -49,7 +49,6 @@ body, div, a {
 	width: 50px;
 	height: 50px;
   border-radius: 25px;
-  border: 2px black solid;
 	font-size: 32px;
 	padding: 10px;
 	margin: 5px;
@@ -72,10 +71,9 @@ body, div, a {
 }
 
 #side a {
-	width: 40px;
-	height: 40px;
-  border-radius: 20px;
-  border: 2px black solid;
+	width: 50px;
+	height: 50px;
+  border-radius: 25px;
 	float: right;
 	font-size: 32px;
 	padding: 10px;
