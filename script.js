@@ -5,10 +5,21 @@ $(document).ready(function(){
             totaldiv.text(number.substr(number.length,9));
             if (number.length > 15) {
                 number = "";
-                totaldiv.text("Err");
+                totaldiv.text("err");
             }
         }
     };
+    /*
+     var totalDoesOverflow = function(total){
+	if (total.length > 9){
+	totaldiv.text(total.substr(total.length,9));
+	if (total.length > 15){
+	   total = '';
+	   totaldiv.text("err");
+	}
+	}
+}
+    */
     //creating ouur variables that renders to our total or screen
     var number = "";
   var total=0;
@@ -69,6 +80,7 @@ $(document).ready(function(){
     	} else if (operator === "×"){
     		total = (parseFloat(newnumber, 10) * parseFloat(number,10)).toString(10);
     		totaldiv.text(total);
+        
 
             } if (total === "NaN") {
                 number = "";
