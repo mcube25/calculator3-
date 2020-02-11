@@ -18,11 +18,28 @@ $(document).ready(function(){
 	   totaldiv.text("err");
 	}
 	}
-}
-  /*
-//for the NAN property
-var myStr = "NotaNumber";
+};
 
+
+  /*
+  var checkNan = function(total){
+
+  if ($(this).attr("id") === "equals") {
+			total = "";
+      totaldiv.text(total)
+		}
+    })
+  };
+//for the NAN property
+var tocheckNan = function(total){
+  if (!isNaN(total)) {
+    totaldiv.text('error');
+  }
+}
+var myStr = "NotaNumber";
+if (!isNaN(total)) {
+  console.log('error');
+}
 var myNum = 3;
 
 myNum += parseInt(myStr) || 0;
@@ -93,12 +110,12 @@ which then returns 0 instead. Very clean and only 3 more characters than norma
 
             } if (total === "NaN") {
                 number = "";
-                totaldiv.text("0");
+                totaldiv.text("0")||0;
+                return;
             }
 
     	totaldiv.text(total);
       totalDoesOverflow(total);
-    	//testNumLength(number);
       number="";
       newnumber="";
 
