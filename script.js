@@ -1,7 +1,7 @@
 $(document).ready(function(){
   //to create maximum amount of numbers in input screen
   var testNumLength = function(number) {
-        if (number.length > 9) {
+        if (number.length > 9 ) {
             totaldiv.text(number.substr(number.length,9));
             if (number.length > 15) {
                 number = "";
@@ -9,16 +9,25 @@ $(document).ready(function(){
             }
         }
     };
-    /*
+
      var totalDoesOverflow = function(total){
 	if (total.length > 9){
 	totaldiv.text(total.substr(total.length,9));
-	if (total.length > 15){
+	if (total.length > 10){
 	   total = '';
 	   totaldiv.text("err");
 	}
 	}
 }
+  /*
+//for the NAN property
+var myStr = "NotaNumber";
+
+var myNum = 3;
+
+myNum += parseInt(myStr) || 0;
+The key is the "|| 0", basically, if parseInt() does not return a number the || operator is invoked
+which then returns 0 instead. Very clean and only 3 more characters than norma
     */
     //creating ouur variables that renders to our total or screen
     var number = "";
@@ -80,7 +89,7 @@ $(document).ready(function(){
     	} else if (operator === "×"){
     		total = (parseFloat(newnumber, 10) * parseFloat(number,10)).toString(10);
     		totaldiv.text(total);
-        
+
 
             } if (total === "NaN") {
                 number = "";
@@ -88,7 +97,8 @@ $(document).ready(function(){
             }
 
     	totaldiv.text(total);
-    	testNumLength(number);
+      totalDoesOverflow(total);
+    	//testNumLength(number);
       number="";
       newnumber="";
 
